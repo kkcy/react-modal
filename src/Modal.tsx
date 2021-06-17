@@ -68,7 +68,9 @@ export interface ModalProps extends Omit<BoxProps, 'children'> {
   }
 }
 
-const MotionBox = motion(Box)
+const MotionBox = motion(Box, {
+  forwardMotionProps: true
+})
 
 export default function Modal({
   allowClose = true,
