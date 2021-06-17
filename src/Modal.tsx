@@ -68,7 +68,7 @@ export interface ModalProps extends Omit<BoxProps, 'children'> {
   }
 }
 
-const MotionBox = motion.custom(Box)
+const MotionBox = motion(Box)
 
 export default function Modal({
   allowClose = true,
@@ -151,7 +151,7 @@ export default function Modal({
                   maxWidth: isFullScreen ? null : maxWidth,
                   ...(sx ?? {}),
                 }}
-                onClick={ev => ev.stopPropagation()}
+                onClick={(ev: Event) => ev.stopPropagation()}
                 {...(props as any)}
               >
                 {typeof children === `function`

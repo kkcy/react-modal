@@ -3,7 +3,7 @@ import { Box, BoxProps } from 'theme-ui'
 import { motion, MotionProps } from 'framer-motion'
 import { useModal } from './ModalContext'
 
-const MotionBox = motion.custom(Box)
+const MotionBox = motion(Box)
 
 export default function Backdrop(props: BoxProps & MotionProps) {
   const { skipAnimations, isFullScreen } = useModal()
