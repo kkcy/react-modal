@@ -28,7 +28,7 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "peerDependencies": {
-    "@mattjennings/react-modal-stack": "^1.0.0",
+    "@mattjennings/react-modal-stack": "^1.0.2",
     "framer-motion": "^2.0.0",
     "react": ">=16",
     "theme-ui": "^0.3.0"
@@ -46,7 +46,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@mattjennings/react-modal-stack": "^1.0.2",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-info": "^5.3.21",
@@ -72,6 +71,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@mattjennings/react-modal-stack": "^1.0.2",
     "@theme-ui/match-media": "^0.9.1",
     "react-scrolllock": "^5.0.1"
   }
